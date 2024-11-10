@@ -1,0 +1,47 @@
+<!-- This is just a sample html file to lern sending data to the servers -->
+<!-- To send this file on to the servers go to file 11 and type this file name there -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: skyblue;
+            font-family: Verdana;
+            color: deeppink;
+            padding: 30px;
+            margin: 0; /* Remove default margin */
+        }
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform:capitalize;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+        p, li{
+            font-size: 16px;
+            text-align: center;
+        }
+       
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs'); %>
+    <h1>Welcome to the profile of <%= person%></h1> <!-- This way you can print variables -->
+    <p><strong>Age: </strong><%= data.age %></p>
+    <p><strong>Job: </strong><%= data.job %></p>
+    <h2>Hobbies: </h2>
+    <u1>
+        <% data.hobbies.forEach(function(item){ %>
+          <li><%= item %></li>  
+        <%});%>
+    </u1>
+</body> 
+</html>

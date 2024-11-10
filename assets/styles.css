@@ -1,0 +1,97 @@
+p {
+    font-size: 24px; /* Increased font size for better readability */
+    text-align: center;
+    color: #333; /* Set text color to a darker shade for better contrast */
+    margin-top: 20px; /* Added some margin to separate it from other elements */
+    font-weight: bold; /* Made the text bold for emphasis */
+    letter-spacing: 1px; /* Added a slight letter-spacing for better spacing between characters */
+    line-height: 1.5; /* Increased line-height for better readability */
+}
+
+ body {
+    background: rgb(71, 223, 211);
+    font-family: Verdana;
+    color: rgb(50, 2, 43);
+    padding: 30px;
+    margin: 0; /* Remove default margin */
+}
+#todo-table {
+    position: relative;
+    width: 95%;
+    background: #f1f6ff;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-table form::after { /* Changed ':' to '::' for pseudo-elements */
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    
+    padding: 10px;
+    background: #ffffff;
+    border: 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Tahoma', sans-serif;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+    
+    /* Center-align horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Round corners */
+    border-radius: 20px; /* Adjust the value to increase or decrease the roundness */
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+
+button {
+    padding: 20px;
+    width: 30%;
+    float: left;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Enclosed font name in quotes */
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+li:hover {
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    background: url('/logo.png') no-repeat center; /* Enclosed URL in quotes */
+    margin-bottom: 0;
+    text-indent: -10000px;
+}

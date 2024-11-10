@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css"/> 
+</head>
+<body>
+    <%- include('partials/nav.ejs'); %>
+    <h1>Contact us</h1>
+    <p>Welcome to our services</p>
+
+    <!-- It is necessary to specify method as post or it will take 'get' by default -->
+    <form id="contact-form" action="/contact" method="post"> 
+        <label for="person">Enter your name</label><br> <!-- Changed </br> to <br> -->
+        <input type="text" name="name" value="<%= qs.name %>"><br> <!-- Changed </br> to <br> -->
+        
+        <label for="dept">Your Department</label><br> <!-- Changed </br> to <br> -->
+        <input type="text" name="department" value="<%= qs.department %>"><br> <!-- Changed </br> to <br> -->
+        
+        <label for="email">Your Email</labels><br> <!-- Changed </br> to <br> -->
+        <input type="email" name="email" value="<%= qs.email %>"><br> <!-- Changed </br> to <br> -->
+        
+        <input type="submit" value="Submit"><br> <!-- Changed </br> to <br> and 'submit' to 'Submit' -->
+    </form>
+</body>
+</html>

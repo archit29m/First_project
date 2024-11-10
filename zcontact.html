@@ -1,0 +1,74 @@
+<!-- This is just a sample html file to lern sending data to the servers -->
+<!-- To send this file on to the servers go to file 11 and type this file name there -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="12html.html">Home</a><br>
+    <a href="zcontact.html">Contact</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: mediumturquoise;
+            font-family: Verdana;
+            color: black;
+            padding: 30px;
+            margin: 0; /* Remove default margin */
+        }
+
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p {
+            padding-top: 70px;
+            font-size: 32px;
+            text-align: center;
+        }
+    </style>
+    <title>Your Page Title</title>
+    <style>
+        /* Center the box on the page */
+        .form-container {
+          width: 300px; /* Adjust width as needed */
+          margin: 50px auto; /* Centers the box horizontally */
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 300px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          background-color: #f9f9f9; /* Light background color */
+        }
+    
+        /* Form styling */
+        form label, form input {
+          display: block;
+          width: 100%;
+          margin-bottom: 3px;
+        }
+    
+        form input {
+          padding: 8px;
+          border-radius: 300px;
+          border: 1px solid #ccc;
+        }
+      </style>
+</head>
+<body>
+    
+    <p>Welcome to our services</p>
+    <form action="final.html" method="POST">
+        <form onsubmit="saveData()" action="zcontact.html" method="POST">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="department">Your Department</label>
+        <input type="department" id="department" name="department" required><br><br>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit">Submit</button>
+        </form>
+      </form>
+</body>
+</html>

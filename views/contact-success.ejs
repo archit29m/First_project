@@ -1,0 +1,38 @@
+<!-- This is just a sample html file to lern sending data to the servers -->
+<!-- To send this file on to the servers go to file 11 and type this file name there -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: skyblue;
+            font-family: Verdana;
+            color: deeppink;
+            padding: 30px;
+            margin: 0; /* Remove default margin */
+        }
+
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs'); %>
+    <h1>Contact us</h1>
+    <p>Thank you for contacting us</p>
+    <p>Welcome <%=data.name%> from <%=data.department%> department.</p>
+    <p>We will reply you at <%=data.email%></p>
+</body>
+</html>
